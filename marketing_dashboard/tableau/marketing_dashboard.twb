@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- This is a placeholder for a Tableau workbook file -->
+<!-- In a real implementation, this would be created and saved from Tableau Desktop -->
+<workbook>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource name='Campaign Performance'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection name='Campaign Data'>
+            <connection class='textscan' directory='../data' filename='processed_campaign_data.csv' />
+          </named-connection>
+        </named-connections>
+      </connection>
+    </datasource>
+    <datasource name='Expanded Marketing Data'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection name='Expanded Data'>
+            <connection class='textscan' directory='../data' filename='processed_expanded_data.csv' />
+          </named-connection>
+        </named-connections>
+      </connection>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Executive Summary'>
+      <!-- Executive dashboard elements would go here -->
+    </worksheet>
+    <worksheet name='Campaign Performance'>
+      <!-- Campaign performance visualizations would go here -->
+    </worksheet>
+    <worksheet name='Channel Analysis'>
+      <!-- Channel analysis visualizations would go here -->
+    </worksheet>
+    <worksheet name='Time Trends'>
+      <!-- Time-based trend visualizations would go here -->
+    </worksheet>
+    <worksheet name='Cross-Channel Insights'>
+      <!-- Cross-channel analysis visualizations would go here -->
+    </worksheet>
+    <worksheet name='Budget Analysis'>
+      <!-- Budget analysis visualizations would go here -->
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Marketing Performance Overview'>
+      <!-- Main dashboard layout would go here -->
+    </dashboard>
+  </dashboards>
+</workbook> 
